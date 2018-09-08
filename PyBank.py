@@ -46,6 +46,7 @@ with open(csvpath, newline="") as csvfile:
     print(sum(profit_change)/month_count)
     print(month_count)
     print(profit)
+    print(profit)
         
 
 
