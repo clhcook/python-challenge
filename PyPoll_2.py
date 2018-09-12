@@ -62,6 +62,12 @@ with open(csvpath, newline="") as csvfile:
     print(f"Li: {round(Li_count/vote_count * 100, 3)}%   ({Li_count})")  
     print(f"O'Tooley: {round(OTooley_count/vote_count * 100, 3)}% ({OTooley_count})")
 
+    print("--------------------------------------------------------")
+
+    print("Winner: Khan")
+
+    
+
       
           
 
