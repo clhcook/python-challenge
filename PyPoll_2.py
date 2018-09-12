@@ -29,37 +29,34 @@ with open(csvpath, newline="") as csvfile:
     for row in csvreader:
         vote_count += 1 
         
-        #vote_numbers = str(row[0])
+        
         last_row = row
     
     
         if str(row[2]) == "Khan":
             Khan_count += 1 
-            #kname = str(row[2])
-            #klist.append(kname)
+            
 
         elif str(row[2]) == "Correy":
             Correy_count += 1
-            #cname = str(row[2])
-            #clist.append(cname)
+            
+            
         
         elif str(row[2]) == "Li":
             Li_count += 1
-            #lname = str(row[2])
-            #llist.append(lname)
+            
         
         elif str(row[2]) == "O'Tooley":
             OTooley_count +=1
-            #oname = str(row[2])
-            #olist.append(oname)
+            
+            
 
     print("Election Results")
     print("--------------------------------------------------------")
     
     print(f"Total Votes: {vote_count}")
     print("--------------------------------------------------------")
-    #print(Khan_count/vote_count*100)
-    #print(round(Khan_count/vote_count*100),4)
+    
     print(f"Khan: {round(Khan_count/vote_count * 100, 3)}%  ({Khan_count})")
     print(f"Correy: {round(Correy_count/vote_count * 100, 3)}% ({Correy_count})")
     print(f"Li: {round(Li_count/vote_count * 100, 3)}%   ({Li_count})")  
