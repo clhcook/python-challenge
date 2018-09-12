@@ -13,7 +13,7 @@ with open(csvpath, newline="") as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader, None)
-    #does making csv header and lastrow throw off the count???
+    
     
 
     last_row = next(csvreader, None)
@@ -42,11 +42,11 @@ with open(csvpath, newline="") as csvfile:
         dictionary = dict(zip(keys, values))
     print("Financial Analysis")
     print("-------------------------------------------------------------------")
-    print(f"The average change in profits is ${round(sum(profit_change)/month_count, 2)}")
-    print(f"Total months {month_count}")
-    print(f"Total profit is ${profit}")
+    
+    print(f"Total months: {month_count}")
+    print(f"Total profit: ${profit}")
+    print(f"The average change in profits: ${round(sum(profit_change)/85, 2)}")
     print(f"Greatest increase in profits is  {max(dictionary.items(), key = lambda x: x[1])}")
     print(f"Greatest decrease in profits is {min(dictionary.items(), key = lambda x: x[1])}")
-    #print(month_list)
-    #print(dictionary)
+    
     
