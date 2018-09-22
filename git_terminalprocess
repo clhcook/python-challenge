@@ -1,0 +1,161 @@
+Last login: Wed Sep  5 21:19:01 on ttys005
+ChristophersMBP:~ christopherhorton-cook$ mkdir python-challenge
+ChristophersMBP:~ christopherhorton-cook$ cd python-challenge/
+ChristophersMBP:python-challenge christopherhorton-cook$ ls
+ChristophersMBP:python-challenge christopherhorton-cook$ git clone https://github.com/clhcook/python-challenge.git
+Cloning into 'python-challenge'...
+warning: You appear to have cloned an empty repository.
+ChristophersMBP:python-challenge christopherhorton-cook$ touch PyBank
+ChristophersMBP:python-challenge christopherhorton-cook$ git add .
+fatal: Not a git repository (or any of the parent directories): .git
+ChristophersMBP:python-challenge christopherhorton-cook$ cd python-challenge
+ChristophersMBP:python-challenge christopherhorton-cook$ git init
+Reinitialized existing Git repository in /Users/christopherhorton-cook/python-challenge/python-challenge/.git/
+ChristophersMBP:python-challenge christopherhorton-cook$ touch PyBank
+ChristophersMBP:python-challenge christopherhorton-cook$ git add .
+ChristophersMBP:python-challenge christopherhorton-cook$ git commit -m "first commit message"
+[master (root-commit) fdaa31f] first commit message
+ Committer: Christopher Cook <christopherhorton-cook@ChristophersMBP.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 PyBank
+ChristophersMBP:python-challenge christopherhorton-cook$ touch PyPoll
+ChristophersMBP:python-challenge christopherhorton-cook$ ls
+PyBank	PyPoll
+ChristophersMBP:python-challenge christopherhorton-cook$ git remote add origin https://github.com/clhcook/python-challenge.git
+fatal: remote origin already exists.
+ChristophersMBP:python-challenge christopherhorton-cook$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 227 bytes | 227.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/clhcook/python-challenge.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+ChristophersMBP:python-challenge christopherhorton-cook$ touch PyPoll
+ChristophersMBP:python-challenge christopherhorton-cook$ git add .
+ChristophersMBP:python-challenge christopherhorton-cook$ git commit -m "first commit message"
+[master fe456f1] first commit message
+ Committer: Christopher Cook <christopherhorton-cook@ChristophersMBP.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 PyPoll
+ChristophersMBP:python-challenge christopherhorton-cook$ ls
+PyBank	PyPoll
+ChristophersMBP:python-challenge christopherhorton-cook$ ls
+PyBank	PyPoll
+ChristophersMBP:python-challenge christopherhorton-cook$ cd PyPoll
+-bash: cd: PyPoll: Not a directory
+ChristophersMBP:python-challenge christopherhorton-cook$ cd PyBank
+-bash: cd: PyBank: Not a directory
+ChristophersMBP:python-challenge christopherhorton-cook$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ChristophersMBP:python-challenge christopherhorton-cook$ git push
+To https://github.com/clhcook/python-challenge.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/clhcook/python-challenge.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ChristophersMBP:python-challenge christopherhorton-cook$ pwd
+/Users/christopherhorton-cook/python-challenge/python-challenge
+ChristophersMBP:python-challenge christopherhorton-cook$ ls
+PyBank	PyPoll
+ChristophersMBP:python-challenge christopherhorton-cook$ cp /Users/
+.localized              Guest/                  Shared/                 christopherhorton-cook/ 
+ChristophersMBP:python-challenge christopherhorton-cook$ cp /Users/christopherhorton-cook/Desktop/DataAnalytics_GWU/PyBank.py .
+ChristophersMBP:python-challenge christopherhorton-cook$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	PyBank.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+ChristophersMBP:python-challenge christopherhorton-cook$ git add PyBank.py
+ChristophersMBP:python-challenge christopherhorton-cook$ 
+ChristophersMBP:python-challenge christopherhorton-cook$ 
+ChristophersMBP:python-challenge christopherhorton-cook$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   PyBank.py
+
+ChristophersMBP:python-challenge christopherhorton-cook$ git commit -m 'uploading new file'
+[master 286dfd8] uploading new file
+ Committer: Christopher Cook <christopherhorton-cook@Christophers-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 59 insertions(+)
+ create mode 100644 PyBank.py
+ChristophersMBP:python-challenge christopherhorton-cook$ git pusjh
+git: 'pusjh' is not a git command. See 'git --help'.
+
+The most similar command is
+	push
+ChristophersMBP:python-challenge christopherhorton-cook$ git push
+To https://github.com/clhcook/python-challenge.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/clhcook/python-challenge.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ChristophersMBP:python-challenge christopherhorton-cook$ 
+ChristophersMBP:python-challenge christopherhorton-cook$ 
+ChristophersMBP:python-challenge christopherhorton-cook$ 
+ChristophersMBP:python-challenge christopherhorton-cook$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ChristophersMBP:python-challenge christopherhorton-cook$ pwd
+/Users/christopherhorton-cook/python-challenge/python-challenge
+ChristophersMBP:python-challenge christopherhorton-cook$ ls
+

@@ -14,7 +14,8 @@ with open(csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader, None)
     
-    
+    #calculate change in profit between each month and add it to the profit_change list. append all of the values and then divide them
+    #reset variable last row to current row, incrementing the value of month count. divide change by month count
 
     last_row = next(csvreader, None)
     profit = int(last_row[1])
@@ -40,7 +41,7 @@ with open(csvpath, newline="") as csvfile:
         values = profit_change
         dictionary = dict(zip(keys, values))
     print("Financial Analysis")
-    
+
     print("-------------------------------------------------------------------")
     
     print(f"Total months: {month_count}")
